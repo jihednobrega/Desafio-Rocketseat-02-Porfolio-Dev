@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color-red: #E3646E;
+  --main-color-purple: #BB72E9;
+  --main-color-blue: #3996DB;
+  --main-color-green: #82BC4F;
+  --main-color-yellow: #EABD5F;
+
+  --base-color-gray-100: #0D0E11;
+  --base-color-gray-200: #16181D;
+  --base-color-gray-300: #292C34;
+  --base-color-gray-400: #878EA1;
+  --base-color-gray-500: #C0CACE;
+  --base-color-gray-600: #E2E4E9;
+
+  --font-family-asap: "Asap", sans-serif;
+  --font-family-inconsolata: "Inconsolata", monospace;
+  --font-family-maven-pro: "Maven Pro", sans-serif;
+
+  --h1: 800 56px/120% var(--font-family-asap);
+  --h2: 800 24px/120% var(--font-family-asap);
+  --h3: 800 16px/120% var(--font-family-asap);
+  --text-lg: 400 20px/120% var(--font-family-inconsolata);
+  --text: 400 16px/140% var(--font-family-maven-pro);
+  --text-sm: 400 14px/140% var(--font-family-maven-pro);
+}
+
+header {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  background-image: url(../assets/images/Background_Intro.png);
+  background-repeat: no-repeat;
+}
+
+main {
+  background: var(--base-color-gray-200);
+  width: 100%;
+  height: auto;
+}
+
+aside {
+  background: var(--base-color-gray-100);
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  background-image: url(../assets/images/Background_Contacts.png);
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--main-color-blue);
+}
+
+h1, h2, h3 {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1366px;
+  margin-inline: auto;
+}

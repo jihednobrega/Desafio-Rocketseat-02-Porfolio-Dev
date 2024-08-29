@@ -1,13 +1,187 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Dev</title>
+  <title>Portfólio Dev</title>
 
-  <link rel="stylesheet" href="style/index.css">
+  <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-  
+  <header class="container">
+    <div class="infosWrapper">
+      <div class="mainInfos">
+        <div class="profile">
+          <div class="avatar">
+            <img src="assets/images/Profile.jpg" alt="foto de perfil">
+          </div>
+          <div class="codeIcon">
+            <img src="assets/icons/Code.svg" alt="code icon">
+          </div>
+        </div>
+        <div class="textInfos">
+          <div class="title">
+            Hello World! Meu nome é <span>Jihed Nóbrega</span> e sou
+          </div>
+          <h1>Desenvolvedor Fullstack</h1>
+          <p>Transformo necessidades em aplicações reais, evolventes e funcionais. Desenvolvo sistemas através da minha paixão pela tecnologia, contribuindo com soluções inovadoras e eficazes para desafios complexos.</p>
+        </div>
+      </div>
+      <div class="tagsInfos">
+        <div class="tag">
+          <img src="assets/icons/GitHub.svg" alt="Github">
+          <span>Github</span>
+        </div>
+        <div class="tag">
+          <img src="assets/icons/HTML.svg" alt="HTML">
+          <span>HTML</span>
+        </div>
+        <div class="tag">
+          <img src="assets/icons/CSS.svg" alt="CSS">
+          <span>CSS</span>
+        </div>
+        <div class="tag">
+          <img src="assets/icons/JavaScript.svg" alt="JavaScript">
+          <span>JavaScript</span>
+        </div>
+        <div class="tag">
+          <img src="assets/icons/React.svg" alt="React">
+          <span>React</span>
+        </div>
+        <div class="tag">
+          <img src="assets/icons/Node.js.svg" alt="Node.js">
+          <span>Node.js</span>
+        </div>
+      </div>
+    </div>
+    <img src="assets/icons/CaretDoubleDown.svg" alt="ícone setas voltadas para baixo">
+  </header>
+  <main>
+    <div class="title">
+      <span>Meu trabalho</span>
+      <h2>Veja os projetos em destaque</h2>
+    </div>
+    <section id="jobs">
+      <a href="#" class="card">
+        <img src="assets/images/Thumbnail_Project-01.png" alt="Travelgram - Rede social onde as pessoas mostram os registros de suas viagens pelo mundo">
+
+        <div>
+          <h3>Travelgram</h3>
+          <p>Rede social onde as pessoas mostram os registros de suas viagens pelo mundo</p>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <img src="assets/images/Thumbnail_Project-02.png" alt="Tech News - Homepage de um portal de notícias sobre a área de tecnologia">
+
+        <div>
+          <h3>Tech News</h3>
+          <p>Rede social onde as pessoas mostram os registros de suas viagens pelo mundo</p>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <img src="assets/images/Thumbnail_Project-03.png" alt="Página de receita - Página com o passo a passo de uma receita para cupcakes">
+
+        <div>
+          <h3>Página de receita</h3>
+          <p>Página com o passo a passo de uma receita para cupcakes</p>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <img src="assets/images/Thumbnail_Project-04.png" alt="Zingen - Landing Page completa e responsiva de um aplicativo de Karaokê">
+
+        <div>
+          <h3>Zingen</h3>
+          <p>Landing Page completa e responsiva de um aplicativo de Karaokê</p>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <img src="assets/images/Thumbnail_Project-05.png" alt="Refund - Um sistema para pedido e acompanhamento de reembolso ">
+
+        <div>
+          <h3>Refund</h3>
+          <p>Um sistema para pedido e acompanhamento de reembolso </p>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <img src="assets/images/Thumbnail_Project-06.png" alt="Página de turismo - Página com as principais informações para quem quer viajar para Busan">
+
+        <div>
+          <h3>Página de turismo</h3>
+          <p>Página com as principais informações para quem quer viajar para Busan</p>
+        </div>
+      </a>
+    </section>
+  </main>
+  <aside>
+    <div class="title">
+      <span>Meus serviços</span>
+      <h2>Como posso ajudar o seu negócio</h2>
+    </div>
+
+    <section id="services">
+      <figure class="card">
+        <img src="assets/icons/Devices.svg" alt="Websites e Aplicativos - Desenvolvimento de interfaces">
+
+        <figcaption>
+          <h3>Websites e Aplicativos</h3>
+          <p>Desenvolvimento de interfaces</p>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <img src="assets/icons/HardDrives.svg" alt="API e banco de dados - Criação de serviços do sistema">
+
+        <figcaption>
+          <h3>API e banco de dados</h3>
+          <p>Criação de serviços do sistema</p>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <img src="assets/icons/Infinity.svg" alt="DevOps - Gestão e infraestrutura da aplicação">
+
+        <figcaption>
+          <h3>DevOps</h3>
+          <p>Gestão e infraestrutura da aplicação</p>
+        </figcaption>
+      </figure>
+  </aside>
+  <footer>
+    <div class="title">
+      <span>Contato</span>
+      <h2>Gostou do meu trabalho?</h2>
+      <p>Entre em contato ou acompanhe minhas redes sociais!</p>
+    </div>
+
+    <div class="socials">
+      <a href="#">
+        <img src="assets/icons/LinkedinLogo.svg" alt="Linkedin">
+        <span>Linkedin</span>
+        <span class="arrow"></span>
+      </a>
+      <a href="#">
+        <img src="assets/icons/InstagramLogo.svg" alt="Instagram">
+        <span>Instagram</span>
+        <span class="arrow"></span>
+      </a>
+      <a href="#">
+        <img src="assets/icons/GithubLogo.svg" alt="Github">
+        <span>Github</span>
+        <span class="arrow"></span>
+      </a>
+      <a href="#">
+        <img src="assets/icons/EnvelopeSimple.svg" alt="E-mail">
+        <span>E-mail</span>
+        <span class="arrow"></span>
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
