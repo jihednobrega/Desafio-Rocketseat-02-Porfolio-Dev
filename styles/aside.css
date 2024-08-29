@@ -1,0 +1,23 @@
+#services {
+  display: grid;
+  grid-template-columns: repeat(3, 280px);
+  gap: 24px;
+  
+  .card {
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid var(--base-color-gray-200);
+
+    img {
+      width: 48px;
+      height: 48px;
+    }
+
+    figcaption {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+}
