@@ -32,10 +32,12 @@
 
 header {
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  padding: 120px 163px 183px;
   background-image: url(../assets/images/Background_Intro.png);
+  background-size: cover;
   background-repeat: no-repeat;
+
+  position: relative;
 }
 
 main {
@@ -51,8 +53,8 @@ aside {
 footer {
   width: 100%;
   height: auto;
-  object-fit: cover;
   background-image: url(../assets/images/Background_Contacts.png);
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
