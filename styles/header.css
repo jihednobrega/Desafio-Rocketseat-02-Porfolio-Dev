@@ -54,12 +54,7 @@
   text-align: center;
 
   .title {
-    font: var(--text-lg);
-    color: var(--base-color-gray-500);
-  
-    span {
-      color: var(--main-color-red);
-    }
+    display: block;
   }
 
   h1 {
