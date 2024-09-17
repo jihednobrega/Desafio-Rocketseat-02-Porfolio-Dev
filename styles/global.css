@@ -22,16 +22,23 @@
   --font-family-inconsolata: "Inconsolata", monospace;
   --font-family-maven-pro: "Maven Pro", sans-serif;
 
-  --h1: 800 56px/120% var(--font-family-asap);
-  --h2: 800 24px/120% var(--font-family-asap);
-  --h3: 800 16px/120% var(--font-family-asap);
-  --text-lg: 400 20px/120% var(--font-family-inconsolata);
-  --text: 400 16px/140% var(--font-family-maven-pro);
-  --text-sm: 400 14px/140% var(--font-family-maven-pro);
+  --h1: 800 3rem/120% var(--font-family-asap);
+  --h2: 800 1.5rem/120% var(--font-family-asap);
+  --h3: 800 1rem/120% var(--font-family-asap);
+  --text-lg: 400 1.25rem/120% var(--font-family-inconsolata);
+  --text: 400 1rem/140% var(--font-family-maven-pro);
+  --text-sm: 400 0.875rem/140% var(--font-family-maven-pro);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--base-color-gray-100);
 }
 
 header {
-  padding: 120px 163px 183px;
   background-image: url(../assets/images/Background_Intro.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -39,31 +46,30 @@ header {
   position: relative;
 }
 
-main {
-  padding: 72px 120px 144px;
-  background: var(--base-color-gray-200);
+header.container {
+  padding: 6.25rem 1.5rem;
+  display: block;
+}
 
+main {
+  background: var(--base-color-gray-200);
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 56px;
 }
 
 aside {
-  padding: 88px 120px 120px;
   background: var(--base-color-gray-100);
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 56px;
 }
 
 footer {
-  padding: 128px 120px 166px;
   background-image: url(../assets/images/Background_Contacts.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 
   .title span {
@@ -89,11 +95,14 @@ img {
 }
 
 .container {
-  max-width: 1366px;
+  padding: 3rem 1.5rem;
+  max-width: 85.375rem;
   margin-inline: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 3rem;
+
 }
 
 .title {
@@ -103,7 +112,8 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
+  text-align: center;
 
   h2 {
     font: var(--h2);
@@ -128,4 +138,31 @@ img {
     font: var(--text-sm);
     color: var(--base-color-gray-500);
   }
+}
+
+@media (width >= 80em) {
+  :root {
+    --h1: 800 3.5rem/120% var(--font-family-asap);
+  }
+
+  header.container {
+    padding: 7.5rem 10.1875rem 11.4375rem;
+  }
+
+  main.container {
+    padding: 4.5rem 7.5rem 9rem;
+  }
+
+  aside.container {
+    padding: 5.5rem 7.5rem 7.5rem;
+  }
+
+  footer.container {
+    padding: 8rem 7.5rem 10.375rem;
+  }
+
+.container {
+  gap: 3.5rem;
+}
+
 }

@@ -1,23 +1,34 @@
 #services {
-  display: grid;
-  grid-template-columns: repeat(3, 280px);
-  gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
   
-  .card {
-    padding: 20px;
-    border-radius: 12px;
+  & .card {
+    padding: 1.25rem;
+    border-radius: 0.75rem;
     border: 2px solid var(--base-color-gray-200);
+    width: 17.5rem;
 
-    img {
-      width: 48px;
-      height: 48px;
+    & img {
+      width: 3rem;
+      height: 3rem;
     }
 
-    figcaption {
-      margin-top: 20px;
+    & figcaption {
+      margin-top: 1.25rem;
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 0.5rem;
     }
+  }
+}
+
+@media (width >= 80em) {
+  #services {
+    display: grid;
+    grid-template-columns: repeat(3, 17.5rem);
+    gap: 1.5rem;
   }
 }

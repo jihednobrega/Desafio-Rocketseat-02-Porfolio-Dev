@@ -1,26 +1,36 @@
 #jobs {
-  display: grid;
-  grid-template-columns: repeat(3, 330px);
-  grid-template-rows: repeat(2, 280px);
-  gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 
   .card {
-    padding: 12px;
+    padding: 0.75rem;
     background: var(--base-color-gray-300);
-    border-radius: 12px;
+    border-radius: 0.75rem;
     cursor: pointer;
+    width: min(25rem, 100%);
     
     img {
-      border-radius: 8px;
-      margin-bottom: 20px;
+      border-radius: 0.5rem;
+      margin-bottom: 1.25rem;
     }
     
     h3 {
-      margin-bottom: 8px;
+      margin-bottom: 0.5rem;
     }
   }
 
   .card:hover {
     outline: 1px solid var(--base-color-gray-400);
+  }
+}
+
+@media (width >= 80em) {
+  #jobs {
+    display: grid;
+    grid-template-columns: repeat(3, 20.625rem);
+    grid-template-rows: repeat(2, 17.5rem);
+    gap: 1.5rem;
   }
 }
